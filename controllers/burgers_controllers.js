@@ -4,6 +4,7 @@ var router = express.Router();
 
 var db = require("../models/");
 
+var burger = require("../models/burger.js");
 
 //select all burgers from the db and render them
 router.get("/", function(req, res) {
