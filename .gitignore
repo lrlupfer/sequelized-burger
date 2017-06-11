@@ -1,5 +1,2 @@
-# hide my password
-keys.js
-
-# dependencies
 node_modules
+.DS_Store
