@@ -1,5 +1,5 @@
 {
-  "name": "eat-da-burger",
+  "name": "sequelized-burger",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -21,13 +21,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lrlupfer/eat-da-burger.git"
+    "url": "git+https://github.com/lrlupfer/sequelized-burger.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lrlupfer/eat-da-burger/issues"
+    "url": "https://github.com/lrlupfer/sequelized-burger/issues"
   },
-  "homepage": "https://github.com/lrlupfer/eat-da-burger#readme"
+  "homepage": "https://github.com/lrlupfer/sequelized-burger#readme"
 }
