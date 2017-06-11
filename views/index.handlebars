@@ -1,0 +1,50 @@
+<h1>Burgermania!</h1>
+
+<h2>Burgers that are not yet devoured</h2>
+
+<ul>
+  {{#each burger}}
+    {{#unless this.devoured}}
+      <li>
+        {{this.burger_name}}
+
+        {{> devoured-burger}}
+
+        {{> delete-burger}}
+      </li>
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Devoured burgers!</h2>
+
+<ul>
+  {{#each burger}}
+    {{#if this.devoured}}
+      <li>
+        {{this.burger_name}}
+
+				{{> devoured-burger}}
+
+        {{> delete-burger}}
+      </li>
+    {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Add a burger</h2>
+<form class="create-update-form" action="/" method="POST">
+
+  <div class="form-group">
+    <label for="burger_name">Burger Name:</label>
+    <input type="text" id="burger_name" name="burger_name">
+  </div>
+
+  <div class="form-group">
+    <label for="devoured">Devoured?</label><br>
+    <input type="radio" name="devoured" value="1" checked> Devoured<br>
+    <input type="radio" name="devoured" value="0"> Available
+  </div>
+
+  <button type="submit">Add Burger</button>
+</form>
